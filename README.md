@@ -19,7 +19,7 @@ This LAMP stack can be on a single node or multiple nodes. The inventory file
         10.88.88.20
 
         [dbservers]
-        bensible
+        10.88.88.20
 
 Here the webserver would be configured on the local host and the dbserver on a
 server called `bensible`. The stack can be deployed using the following
@@ -27,6 +27,6 @@ command:
 
         ansible-playbook -i hosts site.yml
 
-Once done, you can check the results by browsing to http://localhost/index.php.
+Once done, you can check the results by browsing to http://10.88.88.20/index.php.
 You should see a simple test page and a list of databases retrieved from the
 database server.
